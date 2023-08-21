@@ -1,0 +1,6 @@
+sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
+sudo phpenmod mbstring
+sudo systemctl restart apache2
+GRANT ALL PRIVILEGES ON *.* TO 'phpmyadmin'@'localhost';
+FLUSH PRIVILEGES;
+EXIT
